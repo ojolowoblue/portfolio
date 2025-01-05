@@ -1,9 +1,9 @@
 ---
-title: "Demo Post 1"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-pubDate: "Sep 10 2022"
-heroImage: "/post_img.webp"
-tags: ["tokio"]
+title: "Code Review is Hypocritical"
+description: "Wait, don't judge me yet, relax and let me take you through my experience as one who reviews code and is also on the receiving end for code reviews."
+pubDate: "Jan 5, 2025"
+heroImage: "/blog/code.png"
+tags: ["coding", "code review"]
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -25,6 +25,10 @@ dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
 Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus
 arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed
 tempus urna et pharetra pharetra massa massa ultricies mi.
+
+```tsx
+    const num = 1;
+```
 
 Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam
 sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec.
