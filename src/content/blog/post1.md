@@ -2,7 +2,7 @@
 title: "The Hypocrisy of Code Reviews: A Frontend Engineer’s Perspective"
 description: "Code reviews are hailed as a critical part of the software development process, fostering collaboration, catching bugs..."
 pubDate: "Jan 5, 2025"
-heroImage: "/blog/code.jpg"
+heroImage: "/blog/workspace.jpg"
 tags: ["Coding", "Code review", "Frontend"]
 keywords: ["code review", "software development", "coding practices", "peer review", "developer feedback"]
 ---
