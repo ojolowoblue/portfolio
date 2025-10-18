@@ -1,87 +1,90 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import GalleryCard from "../components/GalleryCard.astro";
+
+const BASE_IMAGE_URL =
+  "https://res.cloudinary.com/dgxuzkblu/image/upload/v1760774525/portfolio";
 ---
 
 <BaseLayout title="Gallery" sideBarActiveItemID="gallery">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Gallery</div>
+    <div class="text-3xl w-full font-bold mb-5">My Gallery</div>
     <div class="text-lg mb-8 text-base-content/70">
-      A collection of visual works, designs, and creative projects
+      A view of me enjoying the soft life.
     </div>
   </div>
 
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     <GalleryCard
       title="Modern Web Design"
-      img="https://picsum.photos/400/300?random=1"
+      img={`https://res.cloudinary.com/dgxuzkblu/image/upload/v1760774499/portfolio/9_wulmi1.jpg`}
       desc="Clean and minimalist web design showcasing modern UI principles"
       url="#"
-      tags={["Web Design", "UI/UX"]}
-    />
-
-    <GalleryCard
-      title="Mobile App Interface"
-      img="https://picsum.photos/400/300?random=2"
-      desc="Intuitive mobile application interface with focus on user experience"
-      url="#"
-      tags={["Mobile", "App Design"]}
+      tags={["Lekki", "Elegushi beach"]}
     />
 
     <GalleryCard
       title="Brand Identity"
-      img="https://picsum.photos/400/300?random=3"
+      img="https://res.cloudinary.com/dgxuzkblu/image/upload/v1760774514/portfolio/15_maigrp.jpg"
       desc="Complete brand identity design including logo and visual guidelines"
       url="#"
-      tags={["Branding", "Logo Design"]}
+      tags={["Lekki", "Elegushi beach"]}
+    />
+
+    <GalleryCard
+      title="Mobile App Interface"
+      img="https://res.cloudinary.com/dgxuzkblu/image/upload/v1760774519/portfolio/17_hwgdxv.jpg"
+      desc="Intuitive mobile application interface with focus on user experience"
+      url="#"
+      tags={["Lekki", "Elegushi beach"]}
     />
 
     <GalleryCard
       title="E-commerce Platform"
-      img="https://picsum.photos/400/300?random=4"
+      img="https://res.cloudinary.com/dgxuzkblu/image/upload/v1760774505/portfolio/11_zfgqzu.jpg"
       desc="Full-stack e-commerce solution with modern design and functionality"
       url="#"
-      tags={["E-commerce", "Full Stack"]}
+      tags={["Lekki", "Elegushi beach"]}
     />
 
     <GalleryCard
       title="Data Visualization"
-      img="https://picsum.photos/400/300?random=5"
+      img="https://res.cloudinary.com/dgxuzkblu/image/upload/v1760774496/portfolio/8_dveeak.jpg"
       desc="Interactive dashboards and data visualization components"
       url="#"
-      tags={["Data Viz", "Dashboard"]}
+      tags={["Lekki", "Elegushi beach"]}
     />
 
     <GalleryCard
       title="Portfolio Website"
-      img="https://res.cloudinary.com/dgxuzkblu/image/upload/v1760773738/portfolio-images/IMG_4932_cf6e6r.heic"
+      img="https://res.cloudinary.com/dgxuzkblu/image/upload/v1760774491/portfolio/6_npka5n.jpg"
       desc="Personal portfolio website with responsive design and smooth animations"
       url="#"
-      tags={["Portfolio", "Responsive"]}
+      tags={["Lekki", "Elegushi beach"]}
     />
 
     <GalleryCard
       title="SaaS Dashboard"
-      img="https://picsum.photos/400/300?random=7"
+      img="https://res.cloudinary.com/dgxuzkblu/image/upload/v1760774486/portfolio/4_oxda4m.jpg"
       desc="Software as a Service dashboard with advanced analytics and reporting"
       url="#"
-      tags={["SaaS", "Analytics"]}
+      tags={["Lekki", "Elegushi beach"]}
     />
 
     <GalleryCard
       title="Landing Page"
-      img="https://picsum.photos/400/300?random=8"
+      img="https://res.cloudinary.com/dgxuzkblu/image/upload/v1760774495/portfolio/7_wx10aq.jpg"
       desc="High-converting landing page design with optimized user flow"
       url="#"
-      tags={["Landing Page", "Conversion"]}
+      tags={["Lekki", "Elegushi beach"]}
     />
 
     <GalleryCard
       title="Mobile Game UI"
-      img="https://picsum.photos/400/300?random=9"
+      img="https://res.cloudinary.com/dgxuzkblu/image/upload/v1760774482/portfolio/1_j9vrh6.jpg"
       desc="Engaging mobile game interface with intuitive controls and visual feedback"
       url="#"
-      tags={["Game UI", "Mobile"]}
+      tags={["Lekki", "Elegushi beach"]}
     />
   </div>
 </BaseLayout>
