@@ -1,0 +1,28 @@
+---
+const { title, img, desc, url, badge, tags, target = "_blank" } = Astro.props;
+---
+
+<a href={url} target={target} class="block h-full">
+  <div
+    class="card bg-base-100 shadow-lg transition ease-in-out hover:shadow-xl hover:scale-[102%] h-full"
+  >
+    <figure class="aspect-[4/5] overflow-hidden">
+      <img
+        src={img}
+        alt={title}
+        class="w-full h-full object-cover transition-transform hover:scale-105"
+        loading="lazy"
+      />
+    </figure>
+    <div class="card-body p-4">
+      <div class="card-actions justify-end">
+        {
+          tags &&
+            tags.map((tag) => (
+              <div class="badge badge-outline badge-sm">{tag}</div>
+            ))
+        }
+      </div>
+    </div>
+  </div>
+</a>
