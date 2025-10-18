@@ -1,60 +1,44 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
-import HorizontalShopItem from "@components/HorizontalShopItem.astro";
 ---
 
 <BaseLayout title="Projects" sideBarActiveItemID="projects">
   <div>
     <div class="text-3xl w-full font-bold mb-5">Top Projects</div>
   </div>
-
-  <HorizontalCard
-    title="Bitsweeps Revamp"
-    img="/projects/bitsweeps.png"
-    desc="A redesigned and improved version of an online gaming wallet application."
-    url="https://bitsweeps.vip"
-    badge="New"
-  />
-  <div class="divider my-0"></div>
   <HorizontalCard
     title="Abba Collections"
     img="/projects/abba.jpeg"
-    desc="An e-commerce platform built for a faith-based clothing brand with strong a community in Nigeria and the United Kimgdom."
-    url="https://www.abbacollections.com"
+    desc="Built a high-performance online store with low FID and fast INP, delivering seamless product browsing, a secure and rapid checkout, and an integrated mini back office for efficient store management."
+    url="https://v1.abbacollections.com/"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Jon Pelumi"
-    img="/projects/jon-pelumi.jpeg"
-    desc="An e-commerce platform for a fashion design agency based in Lagos, Nigeria."
-    url="https://www.jonpelumi.africa"
+    title="Fedworks Africa"
+    img="/projects/fedworks.jpeg"
+    desc="Fedworks.africa is a portfolio project built with Next.js and Tailwind CSS, designed to be fully responsive and optimized for fast loading. The site showcases professional services or projects with a clean, modern interface that adapts seamlessly across devices and screen sizes. Using Tailwind for efficient styling and Next.js for performance, it delivers a smooth user experience with quick load times and intuitive navigation."
+    url="https://fedworks.africa"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="The Nehemiah Company"
-    img="/projects/tnc.png"
-    desc="A fund-raiser website for The Nehemiah Company project in Lagos, Nigeria."
-    url="https://tnc.gloryrealmsministries.org"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Foodhutz"
-    img="/projects/foodhutz.png"
-    desc="A resturant Dashboard for a food delivery Company based in the United-Kingdom."
-    url="https://www.foodhutz.co.uk"
+    title="Edusko"
+    img="/projects/edusko.jpeg"
+    desc="Edusko is an education marketplace platform built with Next.js and TypeScript that connects parents with K-12 private schools across Africa. It features school search, comparison, enrollment support, and affordable education financing options. The platform serves parents, schools, vendors, and lenders, creating an easy-to-use ecosystem that simplifies school selection and financing through a modern, responsive frontend."
+    url="https://www.edusko.com"
   />
 
   <div>
     <div class="text-3xl w-full font-bold mb-5 mt-10">Open Source</div>
-  </div>
 
-  <HorizontalCard
-    title="ESBuild Live Server"
-    img="/projects/npm.webp"
-    desc="A development server with live reload enabled, allows you to see updates to your file changes in realtime."
-    url="https://www.npmjs.com/package/esbuild-live-server"
-  />
+    <HorizontalCard
+      title="ESBuild Live Server"
+      img="/projects/npm.webp"
+      desc={`Esbuild-live-server is a lightweight development server that offers live reload functionality to instantly update changes in your files in real time. It is minimal yet highly efficient, utilizing the "Chokidar" library to watch for file changes and automatically refresh the browser without manual reloads. It features lightning-fast builds powered by Esbuild, ensuring quick compilation and iteration. Moreover, it uses a lightweight server with no overhead by integrating with create-serve, making the development experience smooth and fast. This tool is ideal for developers seeking a simple, performant live-reloading server for development workflows.`}
+      url="https://www.npmjs.com/package/esbuild-live-server"
+      badge="FOSS"
+    />
+  </div>
 
   <div>
     <div class="text-3xl w-full font-bold mb-5 mt-10">Featured</div>
@@ -62,36 +46,15 @@ import HorizontalShopItem from "@components/HorizontalShopItem.astro";
 
   <HorizontalCard
     title="Ubiscore"
-    desc="An AI Privacy Scoring Platform for GDPR, CCPA, CPRA, and LGPD compliance."
+    desc="Ubiscore is a data privacy management platform developed with React, Next.js, GraphQL, and TypeScript to deliver a fast, scalable, and interactive user experience. The platform helps organizations monitor privacy risks, compliance with regulations like GDPR and CCPA, and receive real-time breach notifications. It features privacy ratings, advanced analytics, and reporting tools, empowering businesses to improve data protection and build customer trust. The modern tech stack ensures a responsive, secure, and efficient frontend that supports complex data interactions and seamless navigation throughout the platform."
     url="https://app.ubiscore.com"
     img="/projects/ubiscore.png"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
     title="Metricks"
-    desc="Metricks is affiliate tracking software designed for small and medium enterprises to enhance their affiliate marketing."
+    desc="Metricks.io is an affiliate marketing platform built using React, Next.js, Gatsby, Sanity, TypeScript, and Tailwind CSS to deliver a fast, scalable, and visually appealing user experience. The platform enables businesses to quickly launch and manage multi-affiliate campaigns with fraud prevention, custom onboarding, and in-app messaging features. Leveraging Gatsby and Sanity ensures smooth content management and fast static site generation, while Tailwind and React/Next.js provide a responsive, modern frontend design. This tech stack supports seamless campaign management, efficient affiliate tracking, and an intuitive dashboard for users to grow and optimize their affiliate marketing efforts."
     url="https://app.metricks.io"
     img="/projects/metricks.png"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Powershop"
-    desc="PowerShop lets you create free online stores, curate products, and earn passive income through e-commerce."
-    url="https://www.app.powershop.link"
-    img="/projects/powershop.png"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Edusko"
-    img="/projects/edusko.jpeg"
-    desc="A platform that matches children with unlimited educational opportunities."
-    url="https://www.edusko.com"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Fedworks Africa"
-    img="/projects/fedworks.jpeg"
-    desc="Portfolio website for a cinematography agency based in Lagos, Nigeria."
-    url="https://fedworks.africa"
   />
 </BaseLayout>
