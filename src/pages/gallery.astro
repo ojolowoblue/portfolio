@@ -1,0 +1,87 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import GalleryCard from "../components/GalleryCard.astro";
+---
+
+<BaseLayout title="Gallery" sideBarActiveItemID="gallery">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">Gallery</div>
+    <div class="text-lg mb-8 text-base-content/70">
+      A collection of visual works, designs, and creative projects
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <GalleryCard
+      title="Modern Web Design"
+      img="https://picsum.photos/400/300?random=1"
+      desc="Clean and minimalist web design showcasing modern UI principles"
+      url="#"
+      tags={["Web Design", "UI/UX"]}
+    />
+
+    <GalleryCard
+      title="Mobile App Interface"
+      img="https://picsum.photos/400/300?random=2"
+      desc="Intuitive mobile application interface with focus on user experience"
+      url="#"
+      tags={["Mobile", "App Design"]}
+    />
+
+    <GalleryCard
+      title="Brand Identity"
+      img="https://picsum.photos/400/300?random=3"
+      desc="Complete brand identity design including logo and visual guidelines"
+      url="#"
+      tags={["Branding", "Logo Design"]}
+    />
+
+    <GalleryCard
+      title="E-commerce Platform"
+      img="https://picsum.photos/400/300?random=4"
+      desc="Full-stack e-commerce solution with modern design and functionality"
+      url="#"
+      tags={["E-commerce", "Full Stack"]}
+    />
+
+    <GalleryCard
+      title="Data Visualization"
+      img="https://picsum.photos/400/300?random=5"
+      desc="Interactive dashboards and data visualization components"
+      url="#"
+      tags={["Data Viz", "Dashboard"]}
+    />
+
+    <GalleryCard
+      title="Portfolio Website"
+      img="https://res.cloudinary.com/dgxuzkblu/image/upload/v1760773738/portfolio-images/IMG_4932_cf6e6r.heic"
+      desc="Personal portfolio website with responsive design and smooth animations"
+      url="#"
+      tags={["Portfolio", "Responsive"]}
+    />
+
+    <GalleryCard
+      title="SaaS Dashboard"
+      img="https://picsum.photos/400/300?random=7"
+      desc="Software as a Service dashboard with advanced analytics and reporting"
+      url="#"
+      tags={["SaaS", "Analytics"]}
+    />
+
+    <GalleryCard
+      title="Landing Page"
+      img="https://picsum.photos/400/300?random=8"
+      desc="High-converting landing page design with optimized user flow"
+      url="#"
+      tags={["Landing Page", "Conversion"]}
+    />
+
+    <GalleryCard
+      title="Mobile Game UI"
+      img="https://picsum.photos/400/300?random=9"
+      desc="Engaging mobile game interface with intuitive controls and visual feedback"
+      url="#"
+      tags={["Game UI", "Mobile"]}
+    />
+  </div>
+</BaseLayout>
