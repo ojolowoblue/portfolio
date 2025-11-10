@@ -1,9 +1,63 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import GalleryCard from "../components/GalleryCard.astro";
+import ReactPhotoGallery from "../components/ReactPhotoGallery";
 
-const BASE_IMAGE_URL =
-  "https://res.cloudinary.com/dgxuzkblu/image/upload/v1760774525/portfolio";
+const items = [
+  {
+    title: "Modern Web Design",
+    img: "https://res.cloudinary.com/dgxuzkblu/image/upload/v1760774499/portfolio/9_wulmi1.jpg",
+    desc: "Clean and minimalist web design showcasing modern UI principles",
+    tags: ["Lekki", "Elegushi beach"],
+  },
+  {
+    title: "Brand Identity",
+    img: "https://res.cloudinary.com/dgxuzkblu/image/upload/v1760774514/portfolio/15_maigrp.jpg",
+    desc: "Complete brand identity design including logo and visual guidelines",
+    tags: ["Lekki", "Elegushi beach"],
+  },
+  {
+    title: "Mobile App Interface",
+    img: "https://res.cloudinary.com/dgxuzkblu/image/upload/v1760774519/portfolio/17_hwgdxv.jpg",
+    desc: "Intuitive mobile application interface with focus on user experience",
+    tags: ["Lekki", "Elegushi beach"],
+  },
+  {
+    title: "E-commerce Platform",
+    img: "https://res.cloudinary.com/dgxuzkblu/image/upload/v1760774505/portfolio/11_zfgqzu.jpg",
+    desc: "Full-stack e-commerce solution with modern design and functionality",
+    tags: ["Lekki", "Elegushi beach"],
+  },
+  {
+    title: "Data Visualization",
+    img: "https://res.cloudinary.com/dgxuzkblu/image/upload/v1760774496/portfolio/8_dveeak.jpg",
+    desc: "Interactive dashboards and data visualization components",
+    tags: ["Lekki", "Elegushi beach"],
+  },
+  {
+    title: "Portfolio Website",
+    img: "https://res.cloudinary.com/dgxuzkblu/image/upload/v1760774491/portfolio/6_npka5n.jpg",
+    desc: "Personal portfolio website with responsive design and smooth animations",
+    tags: ["Lekki", "Elegushi beach"],
+  },
+  {
+    title: "SaaS Dashboard",
+    img: "https://res.cloudinary.com/dgxuzkblu/image/upload/v1760774486/portfolio/4_oxda4m.jpg",
+    desc: "Software as a Service dashboard with advanced analytics and reporting",
+    tags: ["Lekki", "Elegushi beach"],
+  },
+  {
+    title: "Landing Page",
+    img: "https://res.cloudinary.com/dgxuzkblu/image/upload/v1760774495/portfolio/7_wx10aq.jpg",
+    desc: "High-converting landing page design with optimized user flow",
+    tags: ["Lekki", "Elegushi beach"],
+  },
+  {
+    title: "Mobile Game UI",
+    img: "https://res.cloudinary.com/dgxuzkblu/image/upload/v1760774482/portfolio/1_j9vrh6.jpg",
+    desc: "Engaging mobile game interface with intuitive controls and visual feedback",
+    tags: ["Lekki", "Elegushi beach"],
+  },
+];
 ---
 
 <BaseLayout title="Gallery" sideBarActiveItemID="gallery">
@@ -14,77 +68,5 @@ const BASE_IMAGE_URL =
     </div>
   </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    <GalleryCard
-      title="Modern Web Design"
-      img={`https://res.cloudinary.com/dgxuzkblu/image/upload/v1760774499/portfolio/9_wulmi1.jpg`}
-      desc="Clean and minimalist web design showcasing modern UI principles"
-      url="#"
-      tags={["Lekki", "Elegushi beach"]}
-    />
-
-    <GalleryCard
-      title="Brand Identity"
-      img="https://res.cloudinary.com/dgxuzkblu/image/upload/v1760774514/portfolio/15_maigrp.jpg"
-      desc="Complete brand identity design including logo and visual guidelines"
-      url="#"
-      tags={["Lekki", "Elegushi beach"]}
-    />
-
-    <GalleryCard
-      title="Mobile App Interface"
-      img="https://res.cloudinary.com/dgxuzkblu/image/upload/v1760774519/portfolio/17_hwgdxv.jpg"
-      desc="Intuitive mobile application interface with focus on user experience"
-      url="#"
-      tags={["Lekki", "Elegushi beach"]}
-    />
-
-    <GalleryCard
-      title="E-commerce Platform"
-      img="https://res.cloudinary.com/dgxuzkblu/image/upload/v1760774505/portfolio/11_zfgqzu.jpg"
-      desc="Full-stack e-commerce solution with modern design and functionality"
-      url="#"
-      tags={["Lekki", "Elegushi beach"]}
-    />
-
-    <GalleryCard
-      title="Data Visualization"
-      img="https://res.cloudinary.com/dgxuzkblu/image/upload/v1760774496/portfolio/8_dveeak.jpg"
-      desc="Interactive dashboards and data visualization components"
-      url="#"
-      tags={["Lekki", "Elegushi beach"]}
-    />
-
-    <GalleryCard
-      title="Portfolio Website"
-      img="https://res.cloudinary.com/dgxuzkblu/image/upload/v1760774491/portfolio/6_npka5n.jpg"
-      desc="Personal portfolio website with responsive design and smooth animations"
-      url="#"
-      tags={["Lekki", "Elegushi beach"]}
-    />
-
-    <GalleryCard
-      title="SaaS Dashboard"
-      img="https://res.cloudinary.com/dgxuzkblu/image/upload/v1760774486/portfolio/4_oxda4m.jpg"
-      desc="Software as a Service dashboard with advanced analytics and reporting"
-      url="#"
-      tags={["Lekki", "Elegushi beach"]}
-    />
-
-    <GalleryCard
-      title="Landing Page"
-      img="https://res.cloudinary.com/dgxuzkblu/image/upload/v1760774495/portfolio/7_wx10aq.jpg"
-      desc="High-converting landing page design with optimized user flow"
-      url="#"
-      tags={["Lekki", "Elegushi beach"]}
-    />
-
-    <GalleryCard
-      title="Mobile Game UI"
-      img="https://res.cloudinary.com/dgxuzkblu/image/upload/v1760774482/portfolio/1_j9vrh6.jpg"
-      desc="Engaging mobile game interface with intuitive controls and visual feedback"
-      url="#"
-      tags={["Lekki", "Elegushi beach"]}
-    />
-  </div>
+  <ReactPhotoGallery items={items} client:load />
 </BaseLayout>
