@@ -31,10 +31,10 @@ export default function ReactPhotoGallery({ items }: ReactPhotoGalleryProps) {
               />
             </PhotoView>
             <div className="card-body p-4">
-              <h3 className="card-title text-base">{item.title}</h3>
+              {/* <h3 className="card-title text-base">{item.title}</h3>
               {item.desc ? (
                 <p className="text-sm text-base-content/70">{item.desc}</p>
-              ) : null}
+              ) : null} */}
               {item.tags && item.tags.length > 0 ? (
                 <div className="flex flex-wrap gap-2 mt-2">
                   {item.tags.map((tag, tIdx) => (
