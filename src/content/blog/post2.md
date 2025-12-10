@@ -1,6 +1,6 @@
 ---
 title: "How Boluwatife Ojolowo is changing meal routines for busy people"
-description: "I’ve realized that #food is more than just fuel for our bodies. It’s part of our culture, our lifestyle, and it drives our daily productivity. This..."
+description: "I’ve realized that food is more than just fuel for our bodies. It’s part of our culture, our lifestyle, and it drives our daily productivity. This..."
 pubDate: "Dec 2, 2025"
 heroImage: "/blog/food.jpg"
 tags: ["Food", "Lifestyle", "Productivity"]
@@ -9,12 +9,12 @@ keywords: ["food", "lifestyle", "health", "productivity", "meals"]
 
 <!-- Add Open Graph and Twitter Card meta tags for better sharing -->
 <meta property="og:title" content="How Boluwatife Ojolowo is changing meal routines for busy people" />
-<meta property="og:description" content="I’ve realized that #food is more than just fuel for our bodies. It’s part of our culture, our lifestyle, and it drives our daily productivity. This..." />
+<meta property="og:description" content="I’ve realized that food is more than just fuel for our bodies. It’s part of our culture, our lifestyle, and it drives our daily productivity. This..." />
 <meta property="og:image" content="/blog/food.jpg" />
 <meta property="og:url" content="https://ojolowo.com/blog/the-hypocrisy-of-code-reviews-a-frontend-engineers-perspective" />
 <meta name="twitter:card" content="/blog/food.jpg" />
 <meta name="twitter:title" content="How Boluwatife Ojolowo is changing meal routines for busy people" />
-<meta name="twitter:description" content="I’ve realized that #food is more than just fuel for our bodies. It’s part of our culture, our lifestyle, and it drives our daily productivity. This..." />
+<meta name="twitter:description" content="I’ve realized that food is more than just fuel for our bodies. It’s part of our culture, our lifestyle, and it drives our daily productivity. This..." />
 <meta name="twitter:image" content="/blog/food.jpg"/>
 
 ## The Journey
