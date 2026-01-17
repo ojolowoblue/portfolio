@@ -1,5 +1,5 @@
 ---
-title: "The Hypocrisy of Code Reviews: A Frontend Engineer’s Perspective"
+title: "The Hypocrisy of Code Reviews: A Senior Engineer’s Perspective"
 description: "Code reviews are hailed as a critical part of the software development process, fostering collaboration, catching bugs..."
 pubDate: "Oct 22, 2025"
 heroImage: "/blog/workspace.jpg"
@@ -20,11 +20,11 @@ keywords:
 <meta property="og:image" content="/blog/workspace.jpg" />
 <meta property="og:url" content="https://ojolowo.com/blog/the-hypocrisy-of-code-reviews-a-frontend-engineers-perspective" />
 <meta name="twitter:card" content="/blog/workspace.jpg" />
-<meta name="twitter:title" content="The Hypocrisy of Code Reviews: A Frontend Engineer’s Perspective" />
+<meta name="twitter:title" content="The Hypocrisy of Code Reviews: A Senior Engineer’s Perspective" />
 <meta name="twitter:description" content="Code reviews are hailed as a critical part of the software development process, fostering collaboration, catching bugs..." />
 <meta name="twitter:image" content="/blog/workspace.jpg"/>
 
-Code reviews are hailed as a critical part of the software development process, fostering collaboration, catching bugs, and ensuring code quality. They’re the guardian angels of clean code, right? As a frontend engineer, I’ve participated in countless reviews, both as a reviewer and an author, and I’ve come to a conclusion that might ruffle some feathers: **code reviews are often a hypocritical exercise.**
+Code reviews are hailed as a critical part of the software development process, fostering collaboration, catching bugs, and ensuring code quality. They’re the guardian angels of clean code, right? As an engineer, I’ve participated in countless reviews, both as a reviewer and an author, and I’ve come to a conclusion that might ruffle some feathers: **code reviews are often a hypocritical exercise.**
 
 ## The Illusion of Objectivity
 
