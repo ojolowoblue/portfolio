@@ -2,7 +2,7 @@
 title: "How Boluwatife Ojolowo is changing meal routines for busy people"
 description: "I’ve realized that food is more than just fuel for our bodies. It’s part of our culture, our lifestyle, and it drives our daily productivity. This..."
 pubDate: "Dec 2, 2025"
-heroImage: "/blog/food.jpg"
+heroImage: "/blog/food.png"
 tags: ["Food", "Lifestyle", "Productivity"]
 keywords: ["food", "lifestyle", "health", "productivity", "meals"]
 ---
