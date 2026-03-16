@@ -7,7 +7,7 @@ import AnimatedHeroText from "../components/AnimatedHeroText.astro";
 import HorizontalCard from "@components/HorizontalCard.astro";
 
 const posts = (await getCollection("blog")).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 
 const last_posts = posts.slice(0, 3);
@@ -18,19 +18,14 @@ const last_posts = posts.slice(0, 3);
     <AnimatedHeroText />
 
     <div class="text-5xl font-bold pb-3">
-      You're one step closer to achieving your goal
+      You state the problem, I'll deliver the solution
     </div>
     <!-- <div class="text-3xl py-3 font-bold">...</div> -->
     <div class="py-2 flex flex-col gap-2">
       <text class="text-lg">
-        There are two reasons you’re here: you have a problem, and you want
-        results. You’re in the right place.
-      </text>
-
-      <text class="text-lg">
-        With six years of hands-on experience as a software engineer and a
-        proven track record of tackling complex challenges, I deliver practical
-        and effective solutions, regardless of the obstacle.
+        I have a proven track record of building scalable, high-performance web
+        applications for startups and established companies alike. My focus is
+        on delivering clean, maintainable code that drives real business impact.
       </text>
     </div>
 
@@ -49,7 +44,7 @@ const last_posts = posts.slice(0, 3);
   </div>
 
   <div>
-    <div class="text-3xl w-full font-bold mb-2">My clientele</div>
+    <div class="text-3xl w-full font-bold mb-2">Places I've worked</div>
   </div>
 
   <HorizontalCardAlt
@@ -57,6 +52,21 @@ const last_posts = posts.slice(0, 3);
     img="/projects/busha.png"
     desc="busha.io"
     url="https://busha.io"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCardAlt
+    title="Turing"
+    img="/projects/turing.jpeg"
+    desc="turing.com"
+    url="https://turing.com"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCardAlt
+    title="Prunedge"
+    img="/projects/prunedge.jpeg"
+    desc="prunedge.com"
+    url="https://prunedge.com"
+    badge="Featured"
   />
   <div class="divider my-0"></div>
   <HorizontalCardAlt
