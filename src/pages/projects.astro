@@ -7,70 +7,50 @@ const projects = [
     category: "top",
     title: "Busha 3.0",
     img: "/projects/busha-3.0.png",
-    desc: "Busha is a crypto finance web app that lets users seamlessly buy, sell, and manage digital assets while also spending crypto on everyday services like airtime and vouchers, with a frontend experience that feels as familiar and reliable as online banking. As a frontend developer on Busha, the product already delivers responsive, mobile-first interfaces for onboarding, KYC flows, wallets, and trading screens, with clear price visuals, real-time balance updates, and intuitive actions like instant swaps and one-click recurring buys. The app already communicates trust through thoughtful UI states (loading, errors, confirmations), strong input validation for financial forms, and localized content tailored to African markets, all while integrating smoothly with backend APIs for authentication, transactions, and live market data",
+    desc: "When you're dealing with crypto finance in Africa, the primary barrier to user adoption isn't technical capability, it's trust. If an interface lags, flickers during a price refresh, or throws a cryptic error during an instant swap, a user assumes they've lost their money and they abandon the platform. As a frontend engineer at Busha, my job wasn't just to write UI components; it was to build a retail web application that felt as ironclad and familiar as an enterprise online banking app. I owned the interface execution for our core onboarding, wallet management, and live trading screens. Because crypto involves volatile market data and complex backend compliance engines, I engineered rigorous state validation and real-time UI loading and confirmation states. This ensured that whether a user was setting up a recurring buy or spending crypto on everyday utilities like airtime, the transaction felt instantaneous and clear. By taking dense financial mechanics and translating them into a flawless, localized, mobile-first interface, my work directly helped scale the platform to seamlessly handle over 1 million users and maintain trust across more than $3.5 billion in volume",
     url: "https://dash.busha.io/",
   },
   {
     category: "top",
-    title: "Abba Collections",
-    img: "/projects/abba.jpeg",
-    desc: "Built a high-performance online store with low FID and fast INP, delivering seamless product browsing, a secure and rapid checkout, and an integrated mini back office for efficient store management.",
-    url: "https://v1.abbacollections.com/",
-  },
-  {
-    category: "top",
-    title: "Fedworks Africa",
-    img: "/projects/fedworks.jpeg",
-    desc: "Fedworks.africa is a portfolio project built with Next.js and Tailwind CSS, designed to be fully responsive and optimized for fast loading. The site showcases professional services or projects with a clean, modern interface that adapts seamlessly across devices and screen sizes. Using Tailwind for efficient styling and Next.js for performance, it delivers a smooth user experience with quick load times and intuitive navigation.",
-    url: "https://fedworks.africa",
-  },
-  {
-    category: "top",
-    title: "Edusko",
-    img: "/projects/edusko.jpeg",
-    desc: "Edusko is an education marketplace platform built with Next.js and TypeScript that connects parents with K-12 private schools across Africa. It features school search, comparison, enrollment support, and affordable education financing options. The platform serves parents, schools, vendors, and lenders, creating an easy-to-use ecosystem that simplifies school selection and financing through a modern, responsive frontend.",
-    url: "https://www.edusko.com",
+    title: "Dlvr",
+    img: "/projects/dlvr.png",
+    desc: "I engineered usedlvr.com, a high-leverage, lightweight e-commerce engine designed to eliminate subscription-cost barriers for independent merchants.Instead of deploying heavy, costly off-the-shelf platforms that eat into small business margins, I architected a low-overhead, hyper-performant checkout and inventory system. My focus wasn't just on writing clean code; it was on building a zero-friction conversion engine that allowed merchants to launch instantly with near-zero operating costs.By keeping the architecture lightweight and modular, I designed the system to scale beyond a single storefront into a white-labelable platform. This shifted the product from a basic utility to an architected solution capable of powering agency partnerships and distribution flywheels.",
+    url: "https://demo.usedlvr.com",
   },
   {
     category: "open-source",
     title: "Busha Commerce",
     img: "/projects/npm.webp",
-    desc: `An SDK built on TypeScript to Receive crypto payments with Busha commerce`,
+    desc: `When building a commerce SDK, the technical challenge isn't just making the checkout widget look good; it's proving to merchants that your code won't introduce security vulnerabilities into their apps. If a merchant's site gets compromised because of a third-party script, that breaks trust and kills our adoption flywheel.
+    To solve this, I designed a zero-trust integration layer using a strictly sandboxed iframe. I didn't just drop an iframe on the page, I built a secure initialization flow using a hidden form POST so sensitive data never touched exposed URL parameters, and I engineered a rigid, origin-validated postMessage bridge to block spoofing entirely.
+    Because of this architecture, we completely decoupled the merchant's main application from the sensitive transaction state. This meant merchants could integrate our payment flows with absolute confidence, knowing their compliance liability was minimized, while still being able to capture clean, standardized event callbacks to drive their downstream business analytics.`,
     url: "https://www.npmjs.com/package/@busha/commerce-js",
     badge: "FOSS",
   },
   {
-    category: "open-source",
-    title: "ESBuild Live Server",
-    img: "/projects/npm.webp",
-    desc: `Esbuild-live-server is a lightweight development server that offers live reload functionality to instantly update changes in your files in real time. It is minimal yet highly efficient, utilizing the "Chokidar" library to watch for file changes and automatically refresh the browser without manual reloads. It features lightning-fast builds powered by Esbuild, ensuring quick compilation and iteration. Moreover, it uses a lightweight server with no overhead by integrating with create-serve, making the development experience smooth and fast. This tool is ideal for developers seeking a simple, performant live-reloading server for development workflows.`,
-    url: "https://www.npmjs.com/package/esbuild-live-server",
-    badge: "FOSS",
+    category: "top",
+    title: "Metricks",
+    desc: "At Metricks, I wasn't just building a management tool; I was building a growth engine. Most businesses struggle to scale because their customer acquisition costs are too high. Affiliate marketing solves that, but only if the tracking is flawless and the data is actionable. I architected the interface and integration layer that turns complex click and conversion data into an intuitive 'command center' This allows a brand to go from having no affiliate presence to having a fully tracked, integrated, and optimized program in five minutes. By integrating our platform directly with the merchant's existing stack like Shopify or Stripe, I ensured that my frontend wasn't just a pretty layer, but a critical part of their financial and marketing workflow. Because of the clarity and real-time reporting I engineered, merchants could immediately stop wasting money on underperforming channels and double down on the affiliates actually driving their revenue.",
+    url: "https://metricks.io",
+    img: "/projects/metricks.png",
   },
   {
     category: "top",
     title: "Ubiscore",
-    desc: "Ubiscore is a data privacy management platform developed with React, Next.js, GraphQL, and TypeScript to deliver a fast, scalable, and interactive user experience. The platform helps organizations monitor privacy risks, compliance with regulations like GDPR and CCPA, and receive real-time breach notifications. It features privacy ratings, advanced analytics, and reporting tools, empowering businesses to improve data protection and build customer trust. The modern tech stack ensures a responsive, secure, and efficient frontend that supports complex data interactions and seamless navigation throughout the platform.",
+    desc: "Led the frontend architecture for a B2B data privacy platform that evaluates businesses on a 'credit score' model for GDPR and CCPA compliance. While the backend team built the audit engines, my job wasn't just to 'build the dashboard'—it was to solve a massive user activation problem. Compliance data is dense and intimidating; if business users can't understand their risks instantly, they churn. I engineered a real-time visualization layer that made critical data leaks immediately obvious and actionable.Because of that frontend architecture, we turned a complex data auditing process into a self-service product. This directly unblocked our enterprise sales pipeline because it gave multi-tenant corporate clients the exact visibility they needed to manage compliance across dozens of global sub-brands, without requiring manual intervention from our engineering team.",
     url: "https://app.ubiscore.com",
     img: "/projects/ubiscore.png",
-  },
-  {
-    category: "top",
-    title: "Metricks",
-    desc: "Metricks.io is an affiliate marketing platform built using React, Next.js, Gatsby, Sanity, TypeScript, and Tailwind CSS to deliver a fast, scalable, and visually appealing user experience. The platform enables businesses to quickly launch and manage multi-affiliate campaigns with fraud prevention, custom onboarding, and in-app messaging features. Leveraging Gatsby and Sanity ensures smooth content management and fast static site generation, while Tailwind and React/Next.js provide a responsive, modern frontend design. This tech stack supports seamless campaign management, efficient affiliate tracking, and an intuitive dashboard for users to grow and optimize their affiliate marketing efforts.",
-    url: "https://app.metricks.io",
-    img: "/projects/metricks.png",
   },
 ];
 
 const topProjects = projects.filter((p) => p.category === "top");
 const openSourceProjects = projects.filter((p) => p.category === "open-source");
-const featuredProjects = projects.filter((p) => p.category === "featured");
+// const featuredProjects = projects.filter((p) => p.category === "featured");
 ---
 
 <BaseLayout title="Projects" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Top Projects</div>
+    <div class="text-3xl w-full font-bold mb-5">Notable Projects</div>
   </div>
   {
     topProjects.map((project, index) => (
@@ -107,7 +87,7 @@ const featuredProjects = projects.filter((p) => p.category === "featured");
     }
   </div>
 
-  <div>
+  <!-- <div>
     <div class="text-3xl w-full font-bold mb-5 mt-10">Featured</div>
   </div>
   {
@@ -123,5 +103,5 @@ const featuredProjects = projects.filter((p) => p.category === "featured");
         {index < featuredProjects.length - 1 && <div class="divider my-0" />}
       </>
     ))
-  }
+  } -->
 </BaseLayout>
