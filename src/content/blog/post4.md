@@ -31,7 +31,7 @@ I’ve been writing software professionally for over five years. I’ve worked a
 
 But if you asked me to reverse a linked list on a whiteboard? Or traverse a graph? I’d probably freeze.
 
-Recently, I’ve been doing some LeetCode interviews. My success rate? About 35%. For an engineer with my experience, that stings a bit. It’s not that you _need_ Data Structures and Algorithms (DSA) to build good software. I’m proof that you don't. But there’s a gap. A subtle difference in pattern recognition and problem-solving approaches that separates a good engineer from a FAANG-level engineer.
+Recently, I’ve been doing some LeetCode interviews. My success rate? About 45%. For an engineer with my experience, that stings a bit. It’s not that you _need_ Data Structures and Algorithms (DSA) to build good software. I’m proof that you don't. But there’s a gap. A subtle difference in pattern recognition and problem-solving approaches that separates a good engineer from a FAANG-level engineer.
 
 So, I’m finally going back to basics.
 
