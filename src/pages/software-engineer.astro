@@ -1,0 +1,249 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title="Software Engineer" sideBarActiveItemID="software-engineer">
+  <div class="mt-5">
+    <a href="/" class="btn btn-outline btn-sm">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-1"><path d="m15 18-6-6 6-6"/></svg>
+      Home
+    </a>
+  </div>
+  <div class="pb-12 mt-5">
+    <div class="text-5xl font-bold pb-3">Software Engineer</div>
+    <div class="text-2xl py-3 font-bold">Boluwatife Ojolowo</div>
+    <div class="py-2 flex flex-col gap-4 text-justify">
+      <p class="text-lg">
+        I build secure payment infrastructures for high-risk businesses. My
+        solutions have processed over $10M in transactions, significantly
+        reducing fraud and boosting revenue for companies across Africa and
+        beyond.
+      </p>
+      <p class="text-lg">
+        With over half-a-decade of experience, I bring expertise in React, Tailwind, Node, MySQL, Postgres, and TypeScript. I combine technical proficiency and business acumen to deliver efficient, scalable solutions and have a proven ability to streamline organizational processes, automate workflows, and collaborate across teams to achieve strategic objectives.
+      </p>
+    </div>
+    <div class="mt-8 flex gap-2 items-center">
+      <a class="btn" href="https://www.linkedin.com/in/ojolowo" target="_blank">Let's connect!</a>
+      <a href="https://cal.com/ojolowo" target="_blank" class="btn btn-outline !uppercase">BOOK A CALL</a>
+    </div>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Core Competencies</div>
+  </div>
+
+  <div class="mb-10">
+    <ul class="list-disc md:columns-5 columns-2 mx-6 mb-6">
+      <li>React.js</li>
+      <li>Next.js</li>
+      <li>JavaScript</li>
+      <li>TypeScript</li>
+      <li>TailwindCSS</li>
+      <li>Redux</li>
+      <li>GraphQL</li>
+      <li>Sanity</li>
+      <li>Material-UI</li>
+      <li>React Query</li>
+      <li>Flutter</li>
+      <li>Node.js</li>
+      <li>Saas</li>
+      <li>React Native</li>
+      <li>Vue</li>
+      <li>React Testing Library</li>
+      <li>Vite</li>
+    </ul>
+
+    <div class="text-xl font-bold mb-3 mt-6">Transferable Skills</div>
+    <ul class="list-disc md:columns-3 columns-2 mx-6">
+      <li>Collaborative Problem Solving</li>
+      <li>Business Savvy</li>
+      <li>User-Centric Development</li>
+      <li>Product Management leadership</li>
+      <li>Scalability & Performance</li>
+      <li>Strong attention to details</li>
+      <li>Keen eye for design</li>
+    </ul>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Awards & Recognition</div>
+  </div>
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      Recognized as the "Outstanding Front-End Engineer of the Year" and honored
+      with the "Values Award" for exemplifying company culture and driving
+      innovation - <i
+        ><a
+          target="_blank"
+          rel="noreferrer"
+          class="text-primary"
+          href="https://www.busha.ng">Busha</a
+        ></i
+      >
+    </li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Professional Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Busha / Software Engineer"
+      subtitle="May 2022 - Jan 2026, Lagos, Nigeria"
+    >
+      <ul class="list-disc ml-4">
+        <li>
+          Optimized and maintained the core web frontend architecture for an SEC-licensed crypto finance platform, delivering stable, bank-grade user experiences that scale to support over 1 million retail users and $3.5 billion+ in total transaction volumes.
+        </li>
+        <li>
+          Designed and built a mobile-first, multi-step onboarding and KYC pipeline, utilizing granular input validation and robust error-handling states that minimized drop-off rates during friction-heavy compliance checks.
+        </li>
+        <li>
+          Led the front-end execution of payment utilities, transforming complex crypto transactions into intuitive, one-click workflows for localized African markets (such as Nigeria, Kenya) features like airtime top-ups, recurring buys, and instant voucher purchases.
+        </li>
+        <li>
+          Engineered real-time wallet balances, dynamic trading charts, and instantaneous swap screens by orchestrating tight API syncs with backend market-data engines, ensuring absolute precision and data integrity for over 7 million processed trades.
+        </li>
+      </ul>
+      <p class="mb-4 italic">
+        Core Technologies: React, Tailwind CSS, Node.js, TypeScript
+      </p>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Prunedge / Software Engineer"
+      subtitle="May 2023 - July 2023, California, USA"
+    >
+      <ul class="list-disc ml-4">
+        <li>
+          Led the front-end architecture of a Customer Relationship Management (CRM) delivering a user-friendly and efficient platform still in active use.
+        </li>
+        <li>
+          Developed enterprise-grade HRM software for leading banks, providing robust employee management capabilities.
+        </li>
+        <li>
+          Provide responsive technical support via Slack, Telegram, and email to internal teams and external partners.
+        </li>
+        <li>
+          Introduced innovative development patterns to boost team efficiency and minimise bugs.
+        </li>
+      </ul>
+      <p class="mb-4 italic">
+        Core Technologies: React.js, TypeScript, Redux, React Query, Material-UI
+      </p>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Ubiscore / Software Engineer"
+      subtitle="April 2022 - January 2023, Berlin, Germany"
+    >
+      <ul class="list-disc ml-4">
+        <li>
+          Architected a high-performance, multi-tenant frontend infrastructure for a B2B data privacy SaaS, enabling the sales team to successfully target and close enterprise clients requiring rigid multi-organization compliance management.
+        </li>
+        <li>
+          Designed and engineered dynamic compliance dashboards and real-time scanning interfaces that translated complex backend audit data into an intuitive "data privacy credit score." This visualization strategy directly improved user activation by making GDPR, CCPA, and LGPD risks immediately actionable for non-technical business stakeholders.
+        </li>
+        <li>
+          Orchestrated robust, secure API integration layers and state management to handle real-time cross-origin communication during deep domain compliance scans, ensuring zero-latency data propagation and zero data leaks for high-traffic enterprise users.
+        </li>
+      </ul>
+      <p class="mb-4 italic">
+        Core Technologies: Next.js, GraphQL, SaaS, TypeScript, React
+      </p>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Turing / Frontend Software Engineer"
+      subtitle="October 2022 - November 2022, Palo Alto, USA"
+    >
+      <ul class="list-disc ml-4">
+        <li>
+          Built intuitive configuration and deployment dashboards that allowed non-technical enterprise stakeholders to easily train, monitor, and deploy AI assistants, directly reducing customer onboarding friction and time-to-value.
+        </li>
+      </ul>
+      <p class="mb-4 italic">Core Technologies: React.js, TypeScript, Redux</p>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Metricks / Software Engineer"
+      subtitle="October 2021 - April 2022, London, United Kingdom"
+    >
+      <ul class="list-disc ml-4">
+        <li>
+          Developed the frontend architecture for an end-to-end affiliate marketing platform, enabling businesses to launch and scale revenue-generating affiliate programs in under 5 minutes.
+        </li>
+        <li>
+          Orchestrated complex integrations with global e-commerce platforms (Shopify, WooCommerce), payment gateways (Stripe, PayPal), and marketing automation tools, ensuring seamless data flow across the merchant's entire sales stack.
+        </li>
+        <li>
+          Architected real-time reporting interfaces and performance dashboards that allowed advertisers to identify top-performing affiliates and make data-driven decisions to maximize marketing spend efficiency.
+        </li>
+      </ul>
+      <p class="mb-4 italic">
+        Core Technologies: Next.js, TypeScript, Sanity, Tailwind CSS
+      </p>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Ultimate Technologies / Web Developer"
+      subtitle="October 2019 - October 2021"
+    >
+      <ul class="list-disc ml-4">
+        <li>
+          Delivered high-quality, scalable applications using the MERN (MySQL, Express, React, and Node.js) stack, meeting project timelines and exceeding stakeholder expectations.
+        </li>
+        <li>
+          Reduced technical debt through code refactoring and implementation of best practices, resulting in improved maintainability.
+        </li>
+      </ul>
+      <p class="mb-4 italic">
+        Core Technologies: React.js, Node.js, Express, MySQL
+      </p>
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Featured Projects & Open Source contributions</div>
+  </div>
+
+  <HorizontalCard
+    title="Busha 3.0"
+    img="/projects/busha-3.0.png"
+    desc="When you're dealing with crypto finance in Africa, the primary barrier to user adoption isn't technical capability, it's trust. If an interface lags, flickers during a price refresh, or throws a cryptic error during an instant swap, a user assumes they've lost their money and they abandon the platform. As a frontend engineer at Busha, my job wasn't just to write UI components; it was to build a retail web application that felt as ironclad and familiar as an enterprise online banking app. I owned the interface execution for our core onboarding, wallet management, and live trading screens. Because crypto involves volatile market data and complex backend compliance engines, I engineered rigorous state validation and real-time UI loading and confirmation states. This ensured that whether a user was setting up a recurring buy or spending crypto on everyday utilities like airtime, the transaction felt instantaneous and clear. By taking dense financial mechanics and translating them into a flawless, localized, mobile-first interface, my work directly helped scale the platform to seamlessly handle over 1 million users and maintain trust across more than $3.5 billion in volume"
+    url="https://dash.busha.io/"
+  />
+  <div class="divider my-0"></div>
+
+  <HorizontalCard
+    title="Dlvr"
+    img="/projects/dlvr.png"
+    desc="I engineered usedlvr.com, a high-leverage, lightweight e-commerce engine designed to eliminate subscription-cost barriers for independent merchants.Instead of deploying heavy, costly off-the-shelf platforms that eat into small business margins, I architected a low-overhead, hyper-performant checkout and inventory system. My focus wasn't just on writing clean code; it was on building a zero-friction conversion engine that allowed merchants to launch instantly with near-zero operating costs.By keeping the architecture lightweight and modular, I designed the system to scale beyond a single storefront into a white-labelable platform. This shifted the product from a basic utility to an architected solution capable of powering agency partnerships and distribution flywheels."
+    url="https://demo.usedlvr.com"
+  />
+  <div class="divider my-0"></div>
+
+  <HorizontalCard
+    title="Metricks"
+    img="/projects/metricks.png"
+    desc="At Metricks, I wasn't just building a management tool; I was building a growth engine. Most businesses struggle to scale because their customer acquisition costs are too high. Affiliate marketing solves that, but only if the tracking is flawless and the data is actionable. I architected the interface and integration layer that turns complex click and conversion data into an intuitive 'command center' This allows a brand to go from having no affiliate presence to having a fully tracked, integrated, and optimized program in five minutes. By integrating our platform directly with the merchant's existing stack like Shopify or Stripe, I ensured that my frontend wasn't just a pretty layer, but a critical part of their financial and marketing workflow. Because of the clarity and real-time reporting I engineered, merchants could immediately stop wasting money on underperforming channels and double down on the affiliates actually driving their revenue."
+    url="https://metricks.io"
+  />
+  <div class="divider my-0"></div>
+
+  <HorizontalCard
+    title="Ubiscore"
+    img="/projects/ubiscore.png"
+    desc="Led the frontend architecture for a B2B data privacy platform that evaluates businesses on a 'credit score' model for GDPR and CCPA compliance. While the backend team built the audit engines, my job wasn't just to 'build the dashboard'—it was to solve a massive user activation problem. Compliance data is dense and intimidating; if business users can't understand their risks instantly, they churn. I engineered a real-time visualization layer that made critical data leaks immediately obvious and actionable.Because of that frontend architecture, we turned a complex data auditing process into a self-service product. This directly unblocked our enterprise sales pipeline because it gave multi-tenant corporate clients the exact visibility they needed to manage compliance across dozens of global sub-brands, without requiring manual intervention from our engineering team."
+    url="https://app.ubiscore.com"
+  />
+  <div class="divider my-0"></div>
+
+  <HorizontalCard
+    title="Busha Commerce"
+    img="/projects/npm.webp"
+    desc="When building a commerce SDK, the technical challenge isn't just making the checkout widget look good; it's proving to merchants that your code won't introduce security vulnerabilities into their apps. If a merchant's site gets compromised because of a third-party script, that breaks trust and kills our adoption flywheel. To solve this, I designed a zero-trust integration layer using a strictly sandboxed iframe. I didn't just drop an iframe on the page, I built a secure initialization flow using a hidden form POST so sensitive data never touched exposed URL parameters, and I engineered a rigid, origin-validated postMessage bridge to block spoofing entirely. Because of this architecture, we completely decoupled the merchant's main application from the sensitive transaction state. This meant merchants could integrate our payment flows with absolute confidence, knowing their compliance liability was minimized, while still being able to capture clean, standardized event callbacks to drive their downstream business analytics."
+    url="https://www.npmjs.com/package/@busha/commerce-js"
+    badge="FOSS"
+  />
+
+</BaseLayout>
