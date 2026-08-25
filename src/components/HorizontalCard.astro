@@ -1,5 +1,5 @@
 ---
-const { title, img, desc, url, badge, tags, target = "_blank" } = Astro.props;
+const { title, img, desc, url, badge, tags, target = "_blank", custom_img_class } = Astro.props;
 import { Image } from "astro:assets";
 const tag_url = url.split("/").slice(0, -1).join("/") + "/tag";
 ---
@@ -17,7 +17,7 @@ const tag_url = url.split("/").slice(0, -1).join("/") + "/tag";
             height={422}
             format="webp"
             alt={title}
-            class="max-w-full md:max-w-[13rem] rounded-lg"
+            class={custom_img_class || "max-w-full md:max-w-[13rem] rounded-lg"}
           />
         )
       }
